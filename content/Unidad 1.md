@@ -239,7 +239,7 @@ Es un resumen de la información de la muestra. Primero se desarrollaran las que
 ### Media
 Si contamos con los **datos**:
 $$\bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n} \quad siendo \: x_1,x_2,...,x_n\; datos\,muestrales$$
-Si contamos con la **distribución de frecuencias**:
+Si contamos solo con la **distribución de frecuencias**:
 $$\bar{x} = \sum_{i=1}^{k} x_i \, f_r(x_i)$$
 Donde $x_i$ es el centro de cada subintervalo, $k$ la cantidad de clases y $f_r(x_i)$ la frecuencia relativa $= \frac{frecuencia\,absoluta}{n}$ de la clase con centro en $x_i$.
 
