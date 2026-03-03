@@ -317,15 +317,24 @@ Demuestra que en el intervalo $(\bar{x} - 2\hat{\sigma}, \ \bar{x} + 2\hat{\sigm
 2. Más del 75% = datos muy concentrados o poco dispersos.
 ### Medidas de dispersión asociadas a la mediana
 #### Rango intercuartil
-$$RI=Q_3-Q_1$$
+$$RI = Q_3 - Q_1$$
+
+El RI es la amplitud del intervalo que contiene el 50% central de los datos. Entre $Q_1$ y $Q_3$ se encuentra el 50% de los datos.
+
 #### Meda
 $$\text{Meda} = \text{mediana}\{|x_i - \tilde{x}|\}$$
-$|x_i - \tilde{x}|$ *es un desvío.*
 
-En el intervalo $(\tilde{x} - meda, \ \tilde{x} + meda)$ se encuentran aproximadamente el $50\%$ de los datos. Los casos son:
+**Procedimiento:**
+1. Calcular los desvíos absolutos de cada dato respecto de la mediana: $|x_i - \tilde{x}|$
+2. Ordenar esos desvíos de menor a mayor.
+3. Calcular la mediana de esos valores ordenados.
+
+**Interpretación:** En el intervalo $(\tilde{x} - meda,\ \tilde{x} + meda)$ se encuentra aproximadamente el $50\%$ de los datos.
 1. 50% = dispersión esperada.
 2. Más del 50% = el lote tiene poca dispersión.
 
+> [!note]
+> Estas dos medidas están asociadas a la mediana. Si el lote es **asimétrico o tiene valores alejados** se usa la mediana con el RI o la Meda para describir el lote.
 ### Análisis de la simetría
 #### Coeficiente de simetría 
 $$\left|\frac{\bar{x} - \tilde{x}}{\hat{\sigma}}\right| \times 100\%$$
