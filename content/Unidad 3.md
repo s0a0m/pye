@@ -267,11 +267,8 @@ $$g(x) \approx g(\mu_X) + g'(\mu_X)(x - \mu_X) + \frac{1}{2}\, g''(\mu_X)(x - \m
 Tomando esperanza y varianza:
 $$E(Y) \approx g(\mu_X) + \frac{\sigma_X^2\, g''(\mu_X)}{2}$$
 $$V(Y) \approx \left[g'(\mu_X)\right]^2 \sigma_X^2$$
+> [!note]
+> La esperanza de una transformada se puede calcular:
+> - **Exacta:** por definición o por el teorema.
+> - **Aproximada:** por Taylor, usando solo $\mu_X$ y $\sigma_X^2$.
 
-<div align="center">
-  <div style="border: 1px solid #a0a0a0; padding: 15px; display: inline-block; text-align: left; max-width: 500px;">
-    <p>La esperanza de una transformada se puede calcular:</p>
-    <p><strong>De manera exacta:</strong> por definición (encontrando primero la f.d.p. de la transformada) o por el teorema.</p>
-    <p><strong>De manera aproximada:</strong> por Taylor, usando solo $\mu_X$ y $\sigma_X^2$.</p>
-  </div>
-</div>
