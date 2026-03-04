@@ -49,8 +49,7 @@ $$A, B \text{ disjuntos} \Longleftrightarrow A \cap B = \emptyset$$
 
 Sea $A$ y $B$ sucesos en $S$ tales que $P(A) > 0$, definimos:
 $$P(B \mid A) = \frac{P(B \cap A)}{P(A)}$$
-
-Se puede probar que para un suceso $B$ fijo tal que $P(B) > 0$, la función $P(A \mid B)$ es una probabilidad, es decir cumple con los tres axiomas:
+Se puede probar que para un suceso $B$ fijo tal que $P(B) > 0$, $\forall A \subset S$, la función $P(A \mid B)$ es una probabilidad, o sea cumple con los axiomas de la definición de probabilidad.
 
 1. $\forall A \in \mathcal{F},\quad P(A \mid B) \geq 0$
 2. $P(S \mid B) = 1$
