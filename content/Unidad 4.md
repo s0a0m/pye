@@ -22,7 +22,7 @@ Esta situación se modela con una Distribución de Bernoulli: $X \sim \beta(p)$
 En un proceso de Bernoulli, la v.a. Binomial $X \sim b(n,p)$ se define como $X =$ "Número de éxitos en $n$ ensayos de Bernoulli".
 
 - $R_X = \{0, 1, 2, \dots, n\}$
-- $P(X = k) = \dbinom{n}{k} p^k (1-p)^{n-k} \quad k = 0,1,2,\dots,n \quad$ donde $0! = 1$
+- $P(X = k) = \dbinom{n}{k} p^k (1-p)^{n-k} \quad k = 0,1,2,\dots,n \quad$ donde $0! = 1$ y $\dbinom{n}{k} = \dfrac{n!}{k!(n-k)!}$
 - $EX = np, \quad V(X) = np(1-p)$
 
 > [!note] Observación
@@ -55,34 +55,11 @@ $X =$ "Número de sucesos en un intervalo $[0,t)$ de longitud fija, en un proces
 2. **Homogeneidad y proporcionalidad:** la probabilidad de que ocurra un suceso en $[t, t+h)$ es $\lambda h + o(h)$, donde $\lambda$ es constante independiente de $t$ y $o(h)/h \to 0$ cuando $h \to 0$.
 3. **Regularidad:** la probabilidad de que en $[t, t+h)$ ocurran 2 o más sucesos es despreciable cuando $h$ es pequeña.
 
-<div align="center">
-  <table>
-    <thead>
-      <tr>
-        <th>Hipótesis</th>
-        <th>Significado</th>
-        <th>Ejemplo</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Independencia</strong></td>
-        <td>Lo que ocurre en un intervalo no afecta lo que ocurre en otro intervalo disjunto.</td>
-        <td>Que lleguen 20 clientes entre las 10:00 y 10:30 no influye en cuántos llegan entre las 11:00 y 11:30.</td>
-      </tr>
-      <tr>
-        <td><strong>Homogeneidad y proporcionalidad</strong></td>
-        <td>La tasa $\lambda$ es constante y la probabilidad de 1 evento en $[t, t+h)$ es $\lambda h + o(h)$.</td>
-        <td>Si $\lambda = 10$ clientes/hora, en 30 min la probabilidad es proporcional a $10 \times 0.5 = 5$, independientemente de si es de mañana o de tarde.</td>
-      </tr>
-      <tr>
-        <td><strong>Regularidad</strong></td>
-        <td>La probabilidad de 2 o más eventos en un intervalo muy pequeño es despreciable.</td>
-        <td>Es prácticamente imposible que 2 clientes lleguen exactamente en el mismo instante.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+| Hipótesis | Significado | Ejemplo |
+|---|---|---|
+| **Independencia** | Lo que ocurre en un intervalo no afecta lo que ocurre en otro intervalo disjunto. | Que lleguen 20 clientes entre las 10:00 y 10:30 no influye en cuántos llegan entre las 11:00 y 11:30. |
+| **Homogeneidad y proporcionalidad** | La tasa $\lambda$ es constante y la probabilidad de 1 evento en $[t, t+h)$ es $\lambda h + o(h)$. | Si $\lambda = 10$ clientes/hora, en 30 min la probabilidad es proporcional a $10 \times 0.5 = 5$, independientemente de si es de mañana o de tarde. |
+| **Regularidad** | La probabilidad de 2 o más eventos en un intervalo muy pequeño es despreciable. | Es prácticamente imposible que 2 clientes lleguen exactamente en el mismo instante. |
 
 ---
 
