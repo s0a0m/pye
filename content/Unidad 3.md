@@ -254,21 +254,24 @@ $$V(X) = \sum_{i=1}^{\infty} (x_i - \mu)^2\, p_X(x_i)$$
 - $V(aX + b) = a^2\, V(X)$
 
 ### Desigualdad de Chebyshev
-Sea $X$ una v.a. con $EX = \mu$ y $V(X) = \sigma^2$:
+Sea $X$ una v.a. con $EX = \mu$ y $V(X) = \sigma^2$ y $k$ un numero real positivo:
 $$P\left(|X - \mu| \geq k\sigma\right) \leq \frac{1}{k^2}$$
 Equivalentemente:
 $$P\left(|X - \mu| < k\sigma\right) \geq 1 - \frac{1}{k^2}$$
 *La cota puede ser precisa o alejada, proporciona información sobre probabilidad sin conocer la distribución.*
 
 ### Esperanza y varianza aproximadas de una transformada
-Si $g$ tiene derivadas continuas, se desarrolla en serie de Taylor alrededor de $\mu_X$:
+Si $g$ tiene derivadas continuas en el recorrido de $X$, se desarrolla en serie de Taylor alrededor de $\mu_X$ **hasta el término de orden 2**, despreciando los demás términos:
 $$g(x) \approx g(\mu_X) + g'(\mu_X)(x - \mu_X) + \frac{1}{2}\, g''(\mu_X)(x - \mu_X)^2$$
 
-Tomando esperanza y varianza:
+**Para la esperanza** se toma esperanza en ambos miembros usando los 3 términos:
 $$E(Y) \approx g(\mu_X) + \frac{\sigma_X^2\, g''(\mu_X)}{2}$$
+
+**Para la varianza** se desprecia el término de orden 2 y se toma varianza solo sobre el término de orden 1:
 $$V(Y) \approx \left[g'(\mu_X)\right]^2 \sigma_X^2$$
+
 > [!note]
 > La esperanza de una transformada se puede calcular:
-> - **Exacta:** por definición o por el teorema.
+> - **Exacta:** por definición (encontrando primero la f.d.p. de la transformada) o por el teorema.
 > - **Aproximada:** por Taylor, usando solo $\mu_X$ y $\sigma_X^2$.
 
