@@ -5,8 +5,8 @@ Se estudia la relación entre dos variables para **observar una y predecir la ot
 ### Modelo de Regresión Lineal Simple (M.R.L.S.)
 
 $$Y_i = \alpha + \beta x_i + \varepsilon_i \qquad 1 \leq i \leq n$$
-
-donde los errores $\varepsilon_i$ cumplen:
+- $x_i$ fijos
+donde los errores $\varepsilon_i$ aleatorios cumplen:
 - $E(\varepsilon_i) = 0$ (media cero)
 - $V(\varepsilon_i) = \sigma^2$ (varianza constante)
 - $\text{Cov}(\varepsilon_i, \varepsilon_j) = 0$ para $i \neq j$ (no correlación)
@@ -28,7 +28,7 @@ Se quiere predecir $Y_i$ con $\hat{Y}_i = \hat{\alpha} + \hat{\beta} x_i$. El **
 $$e_i = y_i - \hat{y}_i$$
 
 El Método de Mínimos Cuadrados busca $\hat{\alpha}$ y $\hat{\beta}$ que minimicen la suma de cuadrados de los residuos:
-$$h(\hat{\alpha}, \hat{\beta}) = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} \left[y_i - (\hat{\alpha} + \hat{\beta} x_i)\right]^2$$
+$$\hat{\beta} = \frac{\text{Cov}(X,Y)}{\sigma_x^2} = r_{xy} \frac{\sigma_y}{\sigma_x} = \frac{\sum_{i=1}^{n} x_i y_i - n\bar{x}\bar{y}}{\sum_{i=1}^{n} x_i^2 - n\bar{x}^2}$$ Forma equivalente usando desviaciones: $$\hat{\beta} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2}$$
 
 Derivando e igualando a cero se obtienen las **ecuaciones normales**, cuya solución es:
 

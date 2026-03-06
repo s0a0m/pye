@@ -101,7 +101,9 @@ Sea $X_1, \dots, X_n$ m.a. de $X \sim N(\mu, \sigma)$ con $\sigma$ **conocido**.
 **Estadístico pivote:**
 $$\frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)$$
 
-**Cálculo auxiliar:**
+**Cálculo auxiliar:** 
+
+Planteamos:
 $$P\!\left(-z_{1-\alpha/2} < \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} < z_{1-\alpha/2}\right) = 1-\alpha$$
 $$P\!\left(-z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} < \bar{X}-\mu < z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}\right) = 1-\alpha$$
 $$P\!\left(\bar{X} - z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X} + z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}\right) = 1-\alpha$$
@@ -144,10 +146,11 @@ $$\bar{X} \pm t_{1-\alpha/2}^{(n-1)}\frac{s}{\sqrt{n}}$$
 > - $\sigma$ desconocido pero $n > 120$ → se puede usar $N(0,1)$ como aproximación
 
 ### IC para la diferencia de medias $\mu_X - \mu_Y$
-Se tienen **dos poblaciones independientes** con la misma varianza $\sigma$ desconocida:
+
+Se tienen dos poblaciones independientes con la misma $\sigma$ desconocida:
 $$X_1, \dots, X_n \text{ m.a. de } X \sim N(\mu_X, \sigma) \qquad Y_1, \dots, Y_m \text{ m.a. de } Y \sim N(\mu_Y, \sigma)$$
 
-El estimador natural de $\mu_X - \mu_Y$ es $\bar{X} - \bar{Y}$. Por el T. de Combinaciones Lineales:
+El estimador natural de $\mu_X - \mu_Y$ es $\bar{X} - \bar{Y}$. Por el T. de Combinaciones Lineales, $\bar{X} - \bar{Y}$ sigue una distribución Normal, y además:
 $$E(\bar{X} - \bar{Y}) = \mu_X - \mu_Y \qquad V(\bar{X} - \bar{Y}) = \frac{\sigma^2}{n} + \frac{\sigma^2}{m} = \sigma^2\!\left(\frac{1}{n}+\frac{1}{m}\right)$$
 
 Como $\sigma$ es desconocido pero **común** a ambas poblaciones, se estima combinando ambas muestras con la **varianza pooled**:
@@ -160,6 +163,8 @@ $$s_p^2 = \frac{(n-1)s_X^2 + (m-1)s_Y^2}{n + m - 2}$$
 $$\frac{\bar{X} - \bar{Y} - (\mu_X - \mu_Y)}{s_p\sqrt{\dfrac{1}{n}+\dfrac{1}{m}}} \sim t_{(n+m-2)}$$
 
 **Cálculo auxiliar:**
+
+Planteamos
 $$P\!\left(-t_{1-\alpha/2}^{(n+m-2)} < \frac{\bar{X}-\bar{Y}-(\mu_X-\mu_Y)}{s_p\sqrt{\frac{1}{n}+\frac{1}{m}}} < t_{1-\alpha/2}^{(n+m-2)}\right) = 1-\alpha$$
 
 $$P\!\left(-t_{1-\alpha/2}^{(n+m-2)}\, s_p\sqrt{\tfrac{1}{n}+\tfrac{1}{m}} < \bar{X}-\bar{Y}-(\mu_X-\mu_Y) < t_{1-\alpha/2}^{(n+m-2)}\, s_p\sqrt{\tfrac{1}{n}+\tfrac{1}{m}}\right) = 1-\alpha$$

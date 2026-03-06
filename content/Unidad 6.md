@@ -59,7 +59,7 @@ $$F_X\!\left(x_{(j)}\right) \approx \frac{j}{n+1} \;\Rightarrow\; 1 - e^{-\lambd
 Despejando:
 $$x_{(j)} \approx \frac{1}{\lambda}\left[-\ln\!\left(1 - \frac{j}{n+1}\right)\right]$$
 
-Si graficamos $x_{(j)}$ vs $-\ln\!\left(1 - \dfrac{j}{n+1}\right)$ debe ajustar a una **recta que pasa por el origen** con pendiente $\dfrac{1}{\lambda}$.
+Si graficamos $x_{(j)}$ vs $-\ln\!\left(1 - \dfrac{j}{n+1}\right)$ debe ajustar a una **recta que pasa por el origen** con pendiente $\dfrac{1}{\lambda}$.[]
 
 <div align="center">
 <svg width="280" height="200" xmlns="http://www.w3.org/2000/svg">
